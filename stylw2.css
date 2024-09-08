@@ -1,0 +1,124 @@
+
+@keyframes spin2 {
+    0%{
+        stroke-dashoffset: 164;
+    }
+    100%{
+        stroke-dashoffset: 478;
+    }
+}
+
+
+#mainpage{
+    display: none;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+#loader{
+    color: white;
+    background-color: rgb(177, 127, 127);
+    width: 100%;
+    height: 100vh;
+    /* display: none; */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.loadertop, .loaderbottom{
+    width: 100vw;
+}
+#loader .loadertop{
+    height: 60%;
+    width: 100%;
+    /* background-color: yellow; */
+    flex-direction: row;
+    /* gap: 5px; */
+}
+.loaderbottom{
+    height: 40%;
+    width: 100%;
+    align-items: flex-start;
+    background-color:#000;
+    padding-left: 30%;
+    font-size: 30px;
+}
+.loaderbottom a{
+    font-size: 0.7em;
+    padding-left: 150px;
+}
+.loadertext{
+    position: absolute;
+    top: 60%;
+}
+.loadertext2{
+    position: absolute;
+    top: 58%;
+    scale:0.7;
+}
+.loadertext svg{
+    /* background-color: blue; */
+    transform-origin: center;
+    transform: translate(0% ,-50%);
+}
+
+
+
+.loadertext2 svg{
+    /* transform-origin: center; */
+    transform: translate(0%, -50%);
+    /* background-color: ; */
+}
+.loadertext2 svg circle{
+    animation: spin2 1.5s cubic-bezier(1,.05,.38,1.5) infinite;
+}
+
+
+.loaderleft{
+    /* background-color: red; */
+    background-color: rgb(178, 109, 109);
+    background-color: rgb(182, 87, 87);
+
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 50%;
+    position: absolute;
+    left:-200px;
+    font-size: 35px;
+    height: 60%;
+    align-items: flex-end;
+}
+.loaderright{
+    /* background-color: blue; */
+    background-color: rgb(182, 87, 87);
+
+    width: 50%;
+    padding-top: 50px;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.project{
+    position: absolute;
+    top: 100px;
+    /* font-size: 60px; */
+    /* background: rgb(83, 83, 83); */
+}
+.myself{
+    font-size: 60px;
+    /* background: black; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+.project p{
+    /* width: 100%; */
+    font-size:20px;
+    color:rgb(112, 17, 36);
+    /* padding-left: 150px; */
+
+    /* background: red; */
+}
+.project p:last-child{
+    font-size: 25px;
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.display{
+    display: none;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.jcc{
+    justify-content: center;
+}
+.aitems{
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 7fr ;
+}
+
+.bg-red{
+    background-color: red;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-grey{
+    background-color: #191919;
+}
+
+.mt-8{
+    margin-top: 8px ;
+}
+.mt-20{
+    margin-top: 20px ;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.rounded{
+    border-radius: 5px;
+}

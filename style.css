@@ -1,0 +1,556 @@
+
+    .main::-webkit-scrollbar{
+    background: black;
+    width: 5px;
+    }
+    .main::-webkit-scrollbar-button{
+    background-color: #1DB954;
+    }
+    .main::-webkit-scrollbar-thumb{
+    background: rgb(50, 187, 50);
+    }
+
+
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        overflow: hidden;
+        
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        /* overflow: hidden; */
+        background: black;
+    }
+    .left{
+        height: 100%;
+    }
+    .right{
+        height: 100vh;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .side-navbar{
+        height: 160px;
+        width: 95%;
+        align-items: start;
+        box-sizing: border-box;
+    }
+    .side-navbar svg{
+        filter: invert(1);
+    }
+
+    .library{
+        width: 95%;
+        height: 280px;
+        /* background: crimson; */
+        box-sizing: border-box;
+
+    }
+    
+    footer{
+        width: 95%;
+        height: 250px;
+        /* background: magenta; */
+    }
+
+ 
+
+    .homeSVG, .searchSVG{
+        width: 25px;
+    }
+    .searchSVG svg{
+        filter: opacity(0.7);
+    }
+    .side-navbar ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .side-navbar ul li{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: end;
+    }
+    .side-navbar ul li span{
+        color:rgba(255, 255, 255, 0.7);
+     } 
+     .side-navbar ul li span h1{
+        font-size: 1rem;
+    } 
+    .side-navbar  ul li:first-child span{
+        color: white;
+     }
+     .side-navbar  ul li:nth-child(2) svg{
+        filter: opacity(0.8) invert(1)
+          }
+    .side-navbar ul li:first-child{
+        font-weight: bolder;
+         color:white;
+    }
+    
+
+
+    .library svg{
+        filter: brightness(0) opacity(0.7) invert(1);
+        
+        width: 25px;
+    }
+
+    .library div span h4{
+        color:rgba(255, 255, 255, 0.7)
+    }
+    .library div{
+        display: flex;
+    }
+
+    .library div span{
+        align-items:end; 
+
+    }
+    .library span{
+        display: flex;
+        justify-content:space-between;
+        width: 80%;
+    }
+
+    .library span span{
+        /* background-color: blue; */
+        width: 30px;
+    }
+ 
+
+    .createplaylist{
+        width: 95%;
+        height: 170px;
+        box-sizing: border-box;
+        padding-bottom: 15px;
+        margin-top: 45px;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        /* background-color: blue; */
+        
+    }
+    .createplaylist::-webkit-scrollbar{
+        width: 5px;
+    }
+    .createplaylist button{
+        color:black;
+        font-style: bold;
+        font-weight: 600;
+        height: 50px;
+        width: 120px;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border-radius: 23px;
+    }
+
+    .createlist{
+        background-color: rgba(14, 14, 14, 0.5);
+        padding-left: 20px;
+        width: 90%;
+    }
+    .browsepodcasts{
+        background-color: rgb(60, 60, 60);
+        padding-left: 20px;
+        width: 90%;
+    }
+  
+    .browsepodcasts button{
+        padding: 0 10px;
+        width: fit-content;
+        background-color: black;
+        color: white;
+    }
+
+    .verticalfooter{
+        box-sizing: border-box;
+        font-size: 13px;
+    }
+    .legal{
+        flex-direction: row;
+        padding-right: 50px;
+        gap: 20px;
+        flex-wrap:wrap;
+    }
+    .legal a{
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+     }
+    .verticalfooter button{
+        color: black;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 22px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+    }
+    .verticalfooter button svg{
+        width: 15px;
+      
+    }
+
+               
+    .horizontalnavbar{
+        width:100%;
+        height: 70px;
+        border-radius: 5px 5px 0 0 ;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+         background-color: #121212;
+            }
+        
+        .move{
+            padding-left: 40px;
+            flex-direction: row;
+        }
+        .move button{
+            background-color: black;
+            color: wheat;
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 35px;
+            height:35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:not-allowed;
+        }
+        .move button svg{
+            width: 15px;
+            filter: invert(1);
+        }
+
+
+        .signin{
+            flex-direction: row;
+            gap: 50px;
+            padding-right: 50px;
+            height: 70%;
+        }
+        .signin button{
+            cursor: pointer;
+        }
+        .signin button:first-child{
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 800;
+            font-style: bold;
+            background-color: inherit;
+            border: 1px solid #191919;
+            padding: 0 10px;
+        }
+        .signin button:nth-child(2){
+            color: black;
+            font-weight: 800;
+            font-style: bold;
+            background-color: white;
+            border: 1px solid #191919;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+        .signin h1{
+            font-size: 1em;
+        }
+
+
+               
+
+        .main{
+            width: 100%;
+            height: 650px;
+            border-radius: 0 0 5px 5px;
+            background: #191919;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: auto;
+            overflow-x: hidden;
+            margin-bottom: 80px ;
+            
+              }
+            .content{
+                background-color: #191919;
+                width: 100%;
+                overflow: hidden;
+                min-height:285px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                padding-top: 15px;
+                padding-left: 20px;
+            }
+            .content h3{
+                font-size: 25px;
+            }
+            .content a{
+                text-decoration: none;
+            }
+            .contentgrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+            .card{
+                margin-top: 20px;
+                width: 150px;
+                height: 200px;
+                overflow: hidden;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                cursor: pointer;
+
+            }
+            .artistimg img{
+          
+                 width: 90%;
+                 position: relative;
+                 top: 0;
+                 border-radius: 50%;
+            }
+            .artistimg{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                overflow: hidden;
+
+            }
+          
+            .title{
+                margin-left: 10px;
+            }
+            .artist{
+                margin-top: 5px;
+                font-size: 0.9em;
+                color: rgba(255, 255, 255, 0.6);
+                text-overflow: ellipsis;
+            }
+
+
+            .albumimg{
+                width:100%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                overflow: hidden;
+
+            }
+
+
+
+                       
+    .player{
+        position: fixed;
+        color:black;
+        background-color: rgba(70, 70, 70, 0.315);
+        height: 75px;
+        width: 76.5%;
+        margin-right: 20px;
+        bottom: 0;
+        right: 0;
+        gap: 10px;
+        border-radius: 20px;
+        color: white;
+        flex-direction: column;
+    }
+    .player div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+    }
+
+    .player div:nth-child(2) button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        /* background: red; */
+        
+    }
+    .player div:nth-child(2) button:first-child{
+        cursor:not-allowed;        
+    }
+    .player div:nth-child(2) button:nth-child(3){
+        cursor:not-allowed;
+    }
+    .player div:nth-child(2) button svg{
+        /* filter: invert(1); */
+        width: fit-content;
+        scale: 1.4;
+    }
+
+
+
+     
+
+    @property --angle{
+        syntax: '<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes spin {
+        100%{
+            --angle : 360deg;
+            }
+    }
+
+    .customplaylist{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 2px solid green;
+        background-image: conic-gradient(from var(--angle), green 0deg 150deg, transparent 150deg 210deg,green 210deg 300deg, transparent 300deg 360deg);
+        padding: 15px;
+        border-radius:50px;
+        width: 30px;
+        font-size:12px;
+        font-weight: bolder;
+        color:white;
+        cursor: pointer;
+        animation: spin 2s linear infinite;
+        background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+
+ .myplaylist{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 24%;
+    height: 100vh;
+    background-color: #121212;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    transform: translateX(-30vw);
+}
+
+.defaultlist{
+    height: 700px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    overflow-y: auto;
+    /* background-color: blue; */
+}
+.defaultlist::-webkit-scrollbar{
+    background: black;
+    width: 2px;
+}
+.defaultlist::-webkit-scrollbar-thumb{
+    background-color: rgb(66, 136, 66);
+}
+
+.cross1{
+    opacity: 0;
+    cursor:pointer;
+}
+
+.defaultlist ul {
+    list-style: none;
+    }
+    .myplaylist .defaultlist ul li{
+    display: flex;
+    flex-direction: row;
+    
+    /* background-color: aqua; */
+    margin-top: 20px;
+    padding: 10px 0 10px 10px;
+    width: 90%;
+    min-height: 50px;
+    border: 1px solid white; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: center;
+    /* text-align: flex-start; */
+    /* align-items: start; */
+    }
+    
+    .defaultlist ul li div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    /* background-color: blue; */
+    }
+    .defaultlist ul li div +  div{
+    /* background-color: red; */
+    width: 200px;
+    position: relative; left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }
+    .artistname{
+    /* background-color: red; */
+    padding-top: 2px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    
+    }
+    
+    
+    .defaultlist ul li div div:nth-child(2) .titlename{
+    display: inline-block;
+    /* background: red; */
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+    
+    .defaultlist ul li >div:nth-child(2){
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .defaultlist ul li >div:nth-child(2) button{
+        border: none;
+        background-color:inherit;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    
+    
+    .defaultlist ul li svg {
+    filter:invert(1);
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    }
+
+.seekbar{
+    height: 2px;
+    width: 70vw;
+    border: 2px solid rgba(255, 255, 255, 0.704);
+    border-radius: 4px;
+    cursor:not-allowed;
+}
+.circle{
+    content:'';
+    border: 6px solid rgb(0, 255, 0);
+    width: 3px;
+    border-radius: 20px;
+    position: relative;
+    top: -5px;
+    /* left: -1px; */
+    left: 0%;
+    transition: left 0.5s ease freeze;
+    cursor:grab;
+}
+
+#pausebutton{
+    display: none;
+}
